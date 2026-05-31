@@ -52,20 +52,13 @@
 
 ## 快速开始
 
-1. 下载 `F1-DRS.html`
-2. 双击在浏览器中打开（推荐 Chrome / Edge）
+1. 下载 `Source Code.zip`,解压
+2. 双击 `F1-DRS.html`在浏览器中打开（推荐 Chrome / Edge）
 
 
 ---
 
-## 项目结构
 
-```
-F1-DRS/
-└── F1-DRS.html    # 唯一文件，包含全部 HTML/CSS/JS
-```
-
----
 
 ## 开发者
 
