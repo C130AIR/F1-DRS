@@ -54,17 +54,7 @@
 
 1. 下载 `F1-DRS.html`
 2. 双击在浏览器中打开（推荐 Chrome / Edge）
-3. 无需安装、无需构建、无需服务器
 
-### 部署到公网
-
-| 平台 | 方式 |
-|------|------|
-| [Netlify](https://app.netlify.com/drop) | 直接拖拽文件，30 秒上线 |
-| [GitHub Pages](https://pages.github.com) | Push 到仓库 → Settings → Pages |
-| [Vercel](https://vercel.com) | 导入 GitHub 仓库自动部署 |
-
-以上均支持自定义域名 + 免费 HTTPS。
 
 ---
 
