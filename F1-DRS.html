@@ -448,7 +448,6 @@ body::before {
 .history-time { color: var(--green); font-weight: 700; }
 .history-eval { color: var(--text-dim); }
 
-/* ===== LIVE TIMING ===== */
 .placeholder-page {
   display: flex;
   flex-direction: column;
@@ -607,114 +606,6 @@ body::before {
   animation: pulse 2s infinite;
 }
 
-/* ===== LIVE TIMING ===== */
-.lt-info-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 14px 18px;
-  background: rgba(0,229,255,.06);
-  border: 1px solid rgba(0,229,255,.15);
-  border-radius: 10px;
-  margin-bottom: 16px;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.lt-track-info { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
-.lt-circuit {
-  font-size: 18px; font-weight: 700; color: #fff;
-  padding: 4px 12px; background: rgba(0,229,255,.12);
-  border-radius: 6px; border: 1px solid rgba(0,229,255,.25);
-}
-.lt-meeting { font-size: 13px; color: var(--text); }
-.lt-session-type {
-  font-size: 11px; padding: 3px 10px; border-radius: 10px;
-  background: rgba(255,23,68,.15); color: var(--accent2);
-  font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
-}
-.lt-header-right { display: flex; align-items: center; gap: 12px; }
-.lt-update-time { font-size: 12px; color: var(--text-dim); }
-.lt-refresh-btn {
-  padding: 6px 16px; font-size: 12px; font-weight: 600;
-  border: 1px solid var(--accent); background: rgba(0,229,255,.1);
-  color: var(--accent); border-radius: 6px; cursor: pointer;
-  transition: all .2s;
-}
-.lt-refresh-btn:hover { background: rgba(0,229,255,.2); box-shadow: 0 0 12px rgba(0,229,255,.15); }
-
-.lt-table-wrap { overflow-x: auto; border-radius: 12px; }
-.lt-table {
-  width: 100%; border-collapse: collapse;
-  background: rgba(19,24,32,.85); border: 1px solid var(--border);
-  font-size: 13px; overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0,0,0,.2);
-}
-.lt-table thead th {
-  padding: 10px 12px; text-align: left; font-size: 10px;
-  letter-spacing: 1.5px; color: var(--text-dim); font-weight: 600;
-  border-bottom: 1px solid var(--border); background: rgba(0,0,0,.3);
-  text-transform: uppercase;
-}
-.lt-row {
-  transition: background .2s;
-  border-left: 3px solid var(--team-color, #444);
-}
-.lt-row:hover { background: rgba(0,229,255,.06); }
-.lt-row td {
-  padding: 10px 12px; border-bottom: 1px solid rgba(30,42,58,.5);
-  color: var(--text); white-space: nowrap;
-}
-.lt-pos { font-weight: 900; font-size: 15px; color: #fff; width: 50px; text-align: center; }
-.lt-driver { display: flex; flex-direction: column; }
-.lt-acronym {
-  font-size: 11px; color: var(--accent); font-weight: 700;
-  background: rgba(0,229,255,.1); padding: 1px 6px; border-radius: 3px;
-  display: inline-block; width: fit-content; margin-bottom: 2px;
-}
-.lt-fullname { font-weight: 600; color: #fff; font-size: 13px; }
-.lt-team { font-size: 12px; color: var(--text-dim); }
-.lt-gap { font-family: 'Consolas', 'Courier New', monospace; font-size: 13px; color: var(--accent); font-weight: 600; }
-.lt-tire-cell { text-align: center; }
-.lt-tire {
-  display: inline-block; width: 26px; height: 26px; line-height: 24px;
-  border-radius: 50%; border: 2px solid; text-align: center;
-  font-size: 10px; font-weight: 900; background: rgba(0,0,0,.4);
-}
-.lt-laps { font-family: 'Consolas', monospace; font-weight: 600; font-size: 13px; }
-.lt-status-cell { text-align: center; }
-.lt-status-dot {
-  display: inline-block; width: 8px; height: 8px; border-radius: 50%;
-  background: var(--green); box-shadow: 0 0 8px rgba(0,230,118,.5);
-  animation: pulse 2s infinite;
-}
-.lt-status-pit { color: var(--yellow); font-weight: 700; font-size: 11px; }
-.lt-status-out { color: var(--red); font-weight: 700; font-size: 11px; }
-
-.lt-footer {
-  text-align: center; font-size: 11px; color: var(--text-dim);
-  margin-top: 12px; padding: 8px;
-}
-
-/* Loading / Error / Empty */
-.lt-loading, .lt-error, .lt-empty {
-  display: flex; flex-direction: column; align-items: center;
-  justify-content: center; min-height: 40vh; text-align: center;
-}
-.lt-spinner {
-  width: 40px; height: 40px; border: 3px solid var(--border);
-  border-top-color: var(--accent); border-radius: 50%;
-  animation: lt-spin .8s linear infinite; margin-bottom: 16px;
-}
-@keyframes lt-spin { to { transform: rotate(360deg); } }
-.lt-loading p { font-size: 14px; color: var(--text-dim); }
-.lt-error p { font-size: 14px; color: var(--accent2); margin-bottom: 16px; }
-.lt-retry-btn {
-  padding: 8px 24px; font-size: 13px; font-weight: 600;
-  border: 1px solid var(--accent2); background: rgba(255,23,68,.1);
-  color: var(--accent2); border-radius: 6px; cursor: pointer; transition: .2s;
-}
-.lt-retry-btn:hover { background: rgba(255,23,68,.2); }
-.lt-empty p { font-size: 14px; color: var(--text-dim); }
 
 /* ===== MINI-GAMES ===== */
 .game-container {
@@ -1942,6 +1833,139 @@ body::before {
 .track-record-driver { font-size: 13px; color: var(--text-dim); }
 
 
+/* ===== CAR INTRODUCTION PAGE ===== */
+.car-intro-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 22px;
+  margin-top: 8px;
+}
+
+.car-card {
+  background: rgba(19,24,32,.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all .35s cubic-bezier(.22,.61,.36,1);
+  box-shadow: 0 4px 20px rgba(0,0,0,.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.car-card:hover {
+  border-color: rgba(0,229,255,.25);
+  box-shadow: 0 12px 36px rgba(0,0,0,.35), 0 0 0 1px rgba(0,229,255,.06);
+  transform: translateY(-4px);
+}
+
+.car-card-img-wrap {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(135deg, rgba(19,24,32,.95), rgba(10,14,22,.98));
+}
+
+.car-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .5s cubic-bezier(.22,.61,.36,1);
+}
+
+.car-card:hover .car-card-img {
+  transform: scale(1.06);
+}
+
+.car-card-img-error {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 52px;
+  color: var(--text-dim);
+  background: linear-gradient(135deg, rgba(0,229,255,.04), rgba(124,77,255,.04));
+  position: absolute;
+  top:0; left:0;
+}
+
+.car-card-body {
+  padding: 18px 22px 22px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.car-card-team {
+  font-size: 18px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.car-card-model {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 12px;
+  letter-spacing: 2px;
+}
+
+.car-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.car-card-drivers {
+  font-size: 13px;
+  color: var(--text);
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.car-card-drivers .sep {
+  color: var(--text-dim);
+  margin: 0 2px;
+}
+
+.car-card-pu {
+  font-size: 11px;
+  color: var(--text-dim);
+  padding: 4px 12px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(0,229,255,.05);
+}
+
+.car-card-desc {
+  font-size: 12px;
+  color: var(--text-dim);
+  line-height: 1.7;
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255,255,255,.04);
+}
+
+@media (max-width: 768px) {
+  .car-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .car-card-img-wrap {
+    height: 180px;
+  }
+  .car-card-body {
+    padding: 14px 16px 18px;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -2008,9 +2032,6 @@ body::before {
     </div>
 
     <div class="nav-section">数据分析</div>
-    <div class="nav-item" data-page="livetiming">
-      <span class="nav-icon">📡</span><span>Live Timing</span>
-    </div>
     <div class="nav-item" data-page="constructors">
       <span class="nav-icon">🏆</span><span>车队积分榜</span>
     </div>
@@ -2025,6 +2046,9 @@ body::before {
     </div>
     <div class="nav-item" data-page="schedule">
       <span class="nav-icon">📅</span><span>比赛周时间表</span>
+    </div>
+    <div class="nav-item" data-page="car-intro">
+      <span class="nav-icon">🔰</span><span>赛车介绍</span>
     </div>
 
     <div class="nav-section">小游戏</div>
@@ -2263,28 +2287,6 @@ body::before {
     </div>
   </div>
 
-  <!-- LIVE TIMING -->
-  <div class="page" id="page-livetiming">
-    <h2 class="page-title">Live Timing</h2>
-    <p class="page-subtitle">实时车手数据追踪</p>
-    <div class="lt-info-bar" id="lt-info-bar">
-      <div class="lt-track-info">
-        <span class="lt-circuit">—</span>
-        <span class="lt-meeting">正在连接 OpenF1 API...</span>
-      </div>
-      <div class="lt-header-right">
-        <span class="lt-update-time">更新: --:--:--</span>
-        <button class="lt-refresh-btn" onclick="refreshLiveTiming()">刷新</button>
-      </div>
-    </div>
-    <div id="lt-content">
-      <div class="lt-loading">
-        <div class="lt-spinner"></div>
-        <p>正在加载 OpenF1 数据...</p>
-      </div>
-    </div>
-    <div class="lt-footer">Data: OpenF1 API</div>
-  </div>
 
   <!-- QUIZ -->
   <div class="page" id="page-quiz">
@@ -2435,7 +2437,6 @@ body::before {
         力求为车迷提供准确、即时的参考。
       </p>
       <p style="font-size:14px; line-height:1.9; color:var(--text); margin-top:12px;">
-        本项目持续更新中，Live Timing 实时位置追踪功能即将上线，敬请期待。
       </p>
       <div style="margin-top:24px; padding-top:16px; border-top:1px solid var(--border); text-align:center;">
         <p style="font-size:12px; color:var(--text-dim);">Made by <strong style="color:var(--accent);">C130AIR</strong></p>
@@ -2468,6 +2469,13 @@ body::before {
       </select>
     </div>
     <div id="track-detail-area"></div>
+  </div>
+
+  <!-- CAR INTRODUCTION -->
+  <div class="page" id="page-car-intro">
+    <h2 class="page-title">赛车介绍</h2>
+    <p class="page-subtitle">2026 赛季全部 11 支车队赛车 — 技术规则大改 · 全新动力单元时代</p>
+    <div class="car-intro-grid" id="car-intro-grid"></div>
   </div>
 
 </main>
@@ -2830,272 +2838,6 @@ function renderHistory() {
 renderTeams();
 renderTires();
 renderCircuits();
-
-// ============================================================
-//  LIVE TIMING
-// ============================================================
-const LT_API_BASE = 'https://api.openf1.org/v1';
-let ltPollTimer = null;
-let ltSessionKey = null;
-let ltMeetingName = '';
-let ltCircuitName = '';
-
-const TIRE_COLORS = { SOFT: '#ff1744', MEDIUM: '#ffea00', HARD: '#ffffff', INTERMEDIATE: '#00e676', WET: '#2196f3' };
-const TIRE_LABELS = { SOFT: 'S', MEDIUM: 'M', HARD: 'H', INTERMEDIATE: 'I', WET: 'W' };
-
-function initLiveTiming() {
-  clearInterval(ltPollTimer);
-  showLtLoading();
-  fetchMeetingData();
-}
-
-function refreshLiveTiming() {
-  if (ltSessionKey) {
-    showLtLoading();
-    fetchLiveData(ltSessionKey);
-  } else {
-    initLiveTiming();
-  }
-}
-
-// Hook into navTo to trigger LT init
-(function() {
-  const _navTo = navTo;
-  navTo = function(page) {
-    _navTo(page);
-    if (page === 'livetiming') initLiveTiming();
-    else clearInterval(ltPollTimer);
-  };
-})();
-
-function showLtLoading() {
-  const c = document.getElementById('lt-content');
-  if (c) c.innerHTML = '<div class="lt-loading"><div class="lt-spinner"></div><p>正在加载 OpenF1 数据...</p></div>';
-}
-
-function showLtError(msg) {
-  const c = document.getElementById('lt-content');
-  if (c) c.innerHTML = `<div class="lt-error"><p>${msg}</p><button class="lt-retry-btn" onclick="initLiveTiming()">重试</button></div>`;
-}
-
-function showLtEmpty(msg) {
-  const c = document.getElementById('lt-content');
-  if (c) c.innerHTML = `<div class="lt-empty"><p>${msg}</p></div>`;
-}
-
-function updateLtHeader() {
-  const bar = document.getElementById('lt-info-bar');
-  if (!bar) return;
-  const now = new Date();
-  const ts = `${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}:${String(now.getSeconds()).padStart(2,'0')}`;
-  bar.innerHTML = `
-    <div class="lt-track-info">
-      <span class="lt-circuit">${ltCircuitName || '—'}</span>
-      <span class="lt-meeting">${ltMeetingName || '—'}</span>
-      <span class="lt-session-type">RACE</span>
-    </div>
-    <div class="lt-header-right">
-      <span class="lt-update-time">更新: ${ts}</span>
-      <button class="lt-refresh-btn" onclick="refreshLiveTiming()">刷新</button>
-    </div>`;
-}
-
-async function fetchMeetingData() {
-  try {
-    const r = await fetch(LT_API_BASE + '/meetings?year=2026');
-    if (!r.ok) throw new Error('HTTP ' + r.status);
-    const meetings = await r.json();
-    const active = meetings.filter(m => !m.is_cancelled);
-    if (!active.length) { showLtEmpty('2026 赛季暂无可用比赛数据'); return; }
-
-    active.sort((a, b) => new Date(b.date_start) - new Date(a.date_start));
-    const now = new Date();
-    const target = active.find(m => new Date(m.date_start) <= now) || active[active.length - 1];
-
-    ltMeetingName = target.meeting_name || '';
-    ltCircuitName = target.circuit_short_name || target.country_name || '';
-    updateLtHeader();
-    await fetchSessionData(target.meeting_key);
-  } catch (e) {
-    showLtError('无法获取比赛数据: ' + e.message);
-  }
-}
-
-async function fetchSessionData(mKey) {
-  try {
-    const r = await fetch(`${LT_API_BASE}/sessions?meeting_key=${mKey}`);
-    if (!r.ok) throw new Error('HTTP ' + r.status);
-    const sessions = await r.json();
-    const race = sessions.find(s => s.session_type === 'Race');
-    if (!race) { showLtEmpty(`未找到 ${ltMeetingName} 的正赛数据`); return; }
-
-    ltSessionKey = race.session_key;
-    updateLtHeader();
-    await fetchLiveData(race.session_key);
-
-    clearInterval(ltPollTimer);
-    ltPollTimer = setInterval(() => {
-      if (document.getElementById('page-livetiming')?.classList.contains('active')) {
-        fetchLiveData(ltSessionKey);
-      }
-    }, 15000);
-  } catch (e) {
-    showLtError('无法获取赛程数据: ' + e.message);
-  }
-}
-
-async function fetchLiveData(sKey) {
-  try {
-    const urls = [
-      `${LT_API_BASE}/position?session_key=${sKey}`,
-      `${LT_API_BASE}/drivers?session_key=${sKey}`,
-      `${LT_API_BASE}/stints?session_key=${sKey}`,
-      `${LT_API_BASE}/intervals?session_key=${sKey}`,
-      `${LT_API_BASE}/laps?session_key=${sKey}`
-    ];
-    const [posD, drvD, stnD, intD, lapD] = await Promise.all(urls.map(u => fetch(u).then(r => r.json())));
-
-    // Build driver map
-    const drvMap = {};
-    drvD.forEach(d => { drvMap[d.driver_number] = d; });
-
-    // Latest position per driver
-    const posMap = {};
-    posD.forEach(p => {
-      if (!posMap[p.driver_number] || new Date(p.date) > new Date(posMap[p.driver_number].date))
-        posMap[p.driver_number] = p;
-    });
-
-    // Latest interval per driver
-    const intMap = {};
-    intD.forEach(iv => {
-      if (!intMap[iv.driver_number] || new Date(iv.date) > new Date(intMap[iv.driver_number].date))
-        intMap[iv.driver_number] = iv;
-    });
-
-    // Latest stint per driver
-    const stnMap = {};
-    stnD.forEach(s => {
-      if (!stnMap[s.driver_number] || s.stint_number > stnMap[s.driver_number].stint_number)
-        stnMap[s.driver_number] = s;
-    });
-
-    // Max lap_number per driver
-    const lapMap = {};
-    lapD.forEach(l => {
-      if (!lapMap[l.driver_number] || l.lap_number > lapMap[l.driver_number])
-        lapMap[l.driver_number] = l.lap_number;
-    });
-
-    // Build the set of all driver_numbers that appear in position data
-    const posDriverNums = new Set(Object.values(posMap).map(p => p.driver_number));
-
-    // Merge: position data as primary source
-    const sorted = Object.values(posMap).sort((a, b) => a.position - b.position);
-
-    const rows = sorted.map(p => {
-      const dn = p.driver_number;
-      const drv = drvMap[dn] || {};
-      const iv = intMap[dn];
-      const st = stnMap[dn];
-      const laps = lapMap[dn] || 0;
-
-      let gap = '—';
-      let status = 'active';
-      if (iv) {
-        if (iv.gap_to_leader === null || iv.gap_to_leader === undefined) {
-          gap = p.position === 1 ? 'LEADER' : 'PIT';
-          status = p.position === 1 ? 'active' : 'pit';
-        } else if (typeof iv.gap_to_leader === 'number') {
-          gap = iv.gap_to_leader.toFixed(3);
-        } else {
-          gap = String(iv.gap_to_leader);
-        }
-      } else {
-        // No interval data → likely OUT or data unavailable
-        gap = p.position === 1 ? 'LEADER' : '—';
-      }
-
-      let tire = '—';
-      if (st && st.compound) tire = st.compound.toUpperCase();
-
-      return {
-        position: p.position,
-        dn, gap, tire, laps, status,
-        acronym: drv.name_acronym || `#${dn}`,
-        fullName: drv.full_name || drv.broadcast_name || `#${dn}`,
-        teamName: drv.team_name || '—',
-        teamColor: drv.team_colour || '444444'
-      };
-    });
-
-    // Check for drivers in intervals/laps not in position → mark OUT
-    const dnInRows = new Set(rows.map(r => r.dn));
-    const allDriverNums = new Set([...Object.keys(drvMap).map(Number), ...Object.keys(intMap).map(Number)]);
-    allDriverNums.forEach(dn => {
-      if (!dnInRows.has(dn)) {
-        const drv = drvMap[dn] || {};
-        rows.push({
-          position: '—', dn, gap: '—', tire: '—', laps: lapMap[dn] || 0,
-          status: 'out',
-          acronym: drv.name_acronym || `#${dn}`,
-          fullName: drv.full_name || drv.broadcast_name || `#${dn}`,
-          teamName: drv.team_name || '—',
-          teamColor: drv.team_colour || '444444'
-        });
-      }
-    });
-
-    updateLtHeader();
-    renderLtTable(rows);
-  } catch (e) {
-    showLtError('数据加载失败: ' + e.message);
-  }
-}
-
-function renderLtTable(rows) {
-  const c = document.getElementById('lt-content');
-  if (!c) return;
-
-  let tbody = '';
-  rows.forEach(r => {
-    let statusHtml;
-    if (r.status === 'pit') statusHtml = '<span class="lt-status-pit">PIT</span>';
-    else if (r.status === 'out') statusHtml = '<span class="lt-status-out">OUT</span>';
-    else statusHtml = '<span class="lt-status-dot"></span>';
-
-    let tireHtml = '—';
-    if (r.tire !== '—') {
-      const clr = TIRE_COLORS[r.tire] || '#888';
-      const lbl = TIRE_LABELS[r.tire] || r.tire;
-      tireHtml = `<span class="lt-tire" style="color:${clr}; border-color:${clr}">${lbl}</span>`;
-    }
-
-    tbody += `
-      <tr class="lt-row" style="--team-color:#${r.teamColor}">
-        <td class="lt-pos">${r.position}</td>
-        <td class="lt-driver">
-          <span class="lt-acronym">${r.acronym}</span>
-          <span class="lt-fullname">${r.fullName}</span>
-        </td>
-        <td class="lt-team">${r.teamName}</td>
-        <td class="lt-gap">${r.gap}</td>
-        <td class="lt-tire-cell">${tireHtml}</td>
-        <td class="lt-laps">${r.laps}</td>
-        <td class="lt-status-cell">${statusHtml}</td>
-      </tr>`;
-  });
-
-  c.innerHTML = `
-    <div class="lt-table-wrap">
-      <table class="lt-table">
-        <thead><tr>
-          <th>POS</th><th>DRIVER</th><th>TEAM</th><th>GAP</th><th>TIRES</th><th>LAPS</th><th>STATUS</th>
-        </tr></thead>
-        <tbody>${tbody}</tbody>
-      </table>
-    </div>`;
-}
 
 // ===== QUIZ GAME =====
 const quizQuestions = [
@@ -4219,8 +3961,7 @@ function exportMemory(moves, time) {
     else if (page === 'quali-sim' || page === 'quali') initQualiSim();
     else if (page === 'track-memory' || page === 'memory') initMemoryGame();
     else if (page === 'compare') populateCompareSelects();
-    // Livetiming & poll timer handled by upstream LT hook
-  };
+    };
 })();
 
 // Re-render circuits to attach click handlers (initial render ran before override was installed)
@@ -5323,6 +5064,100 @@ function showTrackDetail() {
 
 
 // ============================================================
+//  CAR INTRODUCTION PAGE
+// ============================================================
+const carData = [
+  {
+    team: "Red Bull", model: "RB22", pu: "Red Bull-Ford",
+    drivers: ["Max Verstappen", "Isack Hadjar"],
+    img: "car-images/red-bull.webp",
+    desc: "2026赛季，红牛与福特联手打造全新动力单元。RB22延续了Adrian Newey的空力哲学，侧箱进气口极致微型化，主动前翼机构隐藏于鼻锥结构中，呈现出流体切割般的外观。"
+  },
+  {
+    team: "Racing Bulls", model: "VCARB 03", pu: "Red Bull-Ford",
+    drivers: ["Liam Lawson", "Arvid Lindblad"],
+    img: "car-images/racing-bulls.webp",
+    desc: "作为红牛姐妹车队，VCARB 03共享RB22的诸多内部零件，但外观更加大胆。侧箱采用悬浮式设计以优化气流流向车底扩散器，白色底色搭配彩色点缀和福特蓝，极具辨识度。"
+  },
+  {
+    team: "Haas", model: "VF-26", pu: "Ferrari",
+    drivers: ["Esteban Ocon", "Oliver Bearman"],
+    img: "car-images/haas.webp",
+    desc: "丰田在2026年加大投入成为冠名赞助商，黑/白/红全新涂装焕然一新。VF-26是首款完整展示2026设计的赛车，车队目标直指队史首胜。"
+  },
+  {
+    team: "Audi", model: "R26", pu: "Audi",
+    drivers: ["Nico Hülkenberg", "Gabriel Bortoleto"],
+    img: "car-images/audi.webp",
+    desc: "经过数十年酝酿，奥迪终于在2026年以工厂车队身份正式进军F1。R26采用极具未来感的银/红/黑三色涂装，侧箱设计独树一帜，强调热交换效率以应对高功率MGU-K。"
+  },
+  {
+    team: "Mercedes", model: "W17", pu: "Mercedes",
+    drivers: ["George Russell", "Kimi Antonelli"],
+    img: "car-images/mercedes.webp",
+    desc: "W17回归精密工业风，呈现出极致窄化的可乐瓶造型。利用2026规则允许的新扩散器结构试图找回下压力，全新星芒渐层涂装搭配业界效率最高的电能回收系统，巴塞罗那首测便展现冠军相。"
+  },
+  {
+    team: "Alpine", model: "A526", pu: "Mercedes",
+    drivers: ["Pierre Gasly", "Franco Colapinto"],
+    img: "car-images/alpine.webp",
+    desc: "Alpine在2026年做出重大决定——弃用自研动力单元，转投梅赛德斯阵营。A526造型重点在极端的前后翼端板设计，试图在X-Mode下降低空气湍流提升超车效率，蓝/粉/黑配色依旧醒目。"
+  },
+  {
+    team: "Ferrari", model: "SF-26", pu: "Ferrari",
+    drivers: ["Lewis Hamilton", "Charles Leclerc"],
+    img: "car-images/ferrari.webp",
+    desc: "SF-26是法拉利为2026技术规则大改而研发的激进之作，项目代号Project 678。经典法拉利红涂装加入更多白色与黑色元素，最引人注目的创新是前翼可动襟翼设计——襟翼可像活板门般向后折叠，革命性堪比当年DRS。"
+  },
+  {
+    team: "Williams", model: "FW48", pu: "Mercedes",
+    drivers: ["Carlos Sainz", "Alex Albon"],
+    img: "car-images/williams.webp",
+    desc: "FW48充分利用梅赛德斯变速箱与后悬架布局，车头设计极为简约，将资源集中在降低底盘阻力。深蓝色珠光涂装搭配轻量化赞助标识，威廉姆斯展现出复兴的野心。"
+  },
+  {
+    team: "Cadillac", model: "(Unnamed)", pu: "Ferrari (客户引擎)",
+    drivers: ["Sergio Pérez", "Valtteri Bottas"],
+    img: "car-images/cadillac.webp",
+    desc: "通用汽车终于拥有自己的F1车队！Cadillac在超级碗期间同步发布不对称黑白/银色涂装，声势浩大。作为全新车队，阵容经验丰富（佩雷兹+博塔斯），但在竞争激烈的F1赛场上仍充满未知。"
+  },
+  {
+    team: "McLaren", model: "MCL40", pu: "Mercedes",
+    drivers: ["Lando Norris", "Oscar Piastri"],
+    img: "car-images/mclaren.webp",
+    desc: "卫冕双料冠军迈凯伦的2026战车。木瓜橙/炭灰色涂装延续冠军基因，新规下的底盘与引擎双重大改既是挑战也是机遇。诺里斯和皮亚斯特里能否实现连冠？"
+  },
+  {
+    team: "Aston Martin", model: "AMR26", pu: "Honda",
+    drivers: ["Fernando Alonso", "Lance Stroll"],
+    img: "car-images/aston-martin.webp",
+    desc: "2026是阿斯顿马丁与本田联手的元年。AMR26由传奇空力设计师Adrian Newey操刀，英国赛车绿缎面涂装尽显英伦优雅。本田动力单元在轻量化上极具优势，AMR26成为首批轻松达到768kg限重的赛车之一。"
+  }
+];
+
+function renderCarIntro() {
+  const grid = document.getElementById('car-intro-grid');
+  if (!grid) return;
+  grid.innerHTML = carData.map(c => `
+    <div class="car-card">
+      <div class="car-card-img-wrap">
+        <img class="car-card-img" src="${c.img}" alt="${c.team} ${c.model}" loading="lazy"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <div class="car-card-img-error" style="display:none;">🏎️</div>
+      </div>
+      <div class="car-card-body">
+        <div class="car-card-team">${c.team}</div>
+        <div class="car-card-model">${c.model}</div>
+        <div class="car-card-drivers">${c.drivers[0]} <span class="sep">·</span> ${c.drivers[1]}</div>
+        <div style="margin-bottom:8px;">
+          <span class="car-card-pu">🔩 ${c.pu}</span>
+        </div>
+        <div class="car-card-desc">${c.desc}</div>
+      </div>
+    </div>`).join('');
+}
+
+// ============================================================
 //  UPDATE navTo HOOK for ALL new pages
 // ============================================================
 (function() {
@@ -5339,6 +5174,7 @@ function showTrackDetail() {
     else if (page === 'driver-standings') renderDriverStandings();
     else if (page === 'race-results') renderRaceResults();
     else if (page === 'track-detail') populateTrackSelect();
+    else if (page === 'car-intro') renderCarIntro();
     if (page !== 'countdown') clearInterval(countdownTimer);
   };
 })();
