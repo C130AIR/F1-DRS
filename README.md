@@ -1,5 +1,92 @@
-# F1-DRS
-Welcome～
-F1-DRS is a tool for formula one fan，you can get this year's formula one teamsand drivers imformation,you can also get imformation about this year's any Grand Prix.
+---
 
-this is only a junior high school student exploit，thanks to give me a star～
+# F1-DRS · F1 Paddock Tool
+
+> 一站式 F1 数据工具箱 — 单文件 HTML，零依赖，即开即用。
+
+![Version](https://img.shields.io/badge/version-1.0-ff1744?style=flat-square) ![Lines](https://img.shields.io/badge/lines-~5000-00e5ff?style=flat-square) ![License](https://img.shields.io/badge/license-MIT-555?style=flat-square)
+
+---
+
+## 功能模块
+
+| 模块 | 说明 |
+|------|------|
+| 仪表盘 | 赛季概览、最新动态 |
+| 车队 & 车手 | 10 支车队 + 20 位车手资料 |
+| 车手积分榜 | 实时积分排名 |
+| 制造商积分 | 车队冠军争夺 |
+| 比赛结果 | 逐站赛果回顾 |
+| 轮胎系统 | C0–C5 轮胎配方、策略模拟 |
+| 赛道列表 | 24 条赛道信息 + 官方布局图 |
+| 赛道详情 | 单圈数据、DRS 区、弯道详情 |
+| 排位模拟 | Q1/Q2/Q3 排位赛模拟 |
+| 进站策略 | 换胎时间估算与对比 |
+| 实时计时 | 模拟圈速计时面板 |
+| 比赛倒计时 | 下场比赛倒计时 |
+| 赛程日历 | 全年赛历总览 |
+| 天气 | 赛道天气查询 |
+| 规则手册 | F1 运动规则 & 技术规则 |
+| 旗帜 & 无线电 | 旗语含义 + 经典 TR 语录 |
+| 术语表 | F1 专业术语解释 |
+| 冠军殿堂 | 历年世界冠军 |
+| 车手对比 | 双车手数据对比 |
+| 车手排序 | 按性能指标排序 |
+| 赛道记忆 | 赛道布局记忆挑战 |
+| 反应测试 | 起跑反应训练 |
+| F1 问答 | 知识竞答游戏 |
+| 数据统计 | 历史数据分析 |
+| 关于 | 项目信息 |
+
+共 **26 个功能页面**，全部内嵌在单一 HTML 文件中。
+
+---
+
+## 技术栈
+
+- 纯 HTML / CSS / JavaScript（ES6+）
+- 零外部框架，无 npm 依赖
+- 赛道布局图来自 [F1 官方 CDN](https://media.formula1.com)
+- 暗色主题 + 毛玻璃 UI，适配桌面和移动端
+- 侧边栏式导航，响应式布局（768px 断点）
+
+---
+
+## 快速开始
+
+1. 下载 `F1-DRS.html`
+2. 双击在浏览器中打开（推荐 Chrome / Edge）
+3. 无需安装、无需构建、无需服务器
+
+### 部署到公网
+
+| 平台 | 方式 |
+|------|------|
+| [Netlify](https://app.netlify.com/drop) | 直接拖拽文件，30 秒上线 |
+| [GitHub Pages](https://pages.github.com) | Push 到仓库 → Settings → Pages |
+| [Vercel](https://vercel.com) | 导入 GitHub 仓库自动部署 |
+
+以上均支持自定义域名 + 免费 HTTPS。
+
+---
+
+## 项目结构
+
+```
+F1-DRS/
+└── F1-DRS.html    # 唯一文件，包含全部 HTML/CSS/JS
+```
+
+---
+
+## 开发者
+
+- **署名**：柯梓轩
+- **GitHub**：[C130AIR](https://github.com/C130AIR)
+- **定位**：F1 车迷一站式数据工具
+
+---
+
+## License
+
+MIT © 2026 C130AIR
