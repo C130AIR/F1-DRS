@@ -4,7 +4,7 @@
 
 > 一站式 F1 数据工具箱 — 单文件 HTML，零依赖，即开即用。
 
-![Version](https://img.shields.io/badge/version-1.0-ff1744?style=flat-square) ![Lines](https://img.shields.io/badge/lines-~5000-00e5ff?style=flat-square) ![License](https://img.shields.io/badge/license-MIT-555?style=flat-square)
+
 
 ---
 
